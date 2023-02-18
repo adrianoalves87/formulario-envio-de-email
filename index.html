@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de envio de E-mail</title>
+<style>
+body{
+background-color: aqua;
+}
+.bt1{
+ background-color: rgb(110, 231, 99);   
+}
+.bt2{
+ background-color: rgb(238, 136, 136);   
+}
+/* com box assim deixei centralizado no meio da  tela */
+.box{
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 15px;
+            width: 20%;
+        }
+        img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+     <div class="box">
+            <img src="foto...gif" alt="" style="width:60%;">  
+            <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="hidden" name="redirectTo" value="https://adrianoalves87.github.io/pagina-de-Email-enviado-ok/">
+            seu nome:<br/>
+            <input type="text" name="name" required placeholder=><br/>
+            seu email:<br/>
+            <input type="text" name="email" required placeholder=><br/>
+            escreva sua mensagem:<br/>
+            <textarea name="message"></textarea><br/>
+            <input type="text" name="honeypot" style="display:none">
+            <input type="hidden" name="accessKey" value="0ed11aeb-1543-4010-be90-54c4ff5db31e">
+            <input type="hidden" name="subject" value="Contact us from - example.com" />
+            <input type="hidden" name="replyTo" value="@">
+          <input type="submit" class="bt1" value="enviar" />
+         <input type="reset"class="bt2" value="Limpar"/>
+         </form> 
+</div>
+  
+</body>
+</html>
