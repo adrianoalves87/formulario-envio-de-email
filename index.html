@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de envio de E-mail</title>
+<style>
+body{
+background-color: aqua;
+}
+.bt1{
+ background-color: rgb(110, 231, 99);   
+}
+.bt2{
+ background-color: rgb(238, 136, 136);   
+}
+/* com box assim deixei centralizado no meio da  tela */
+.box{
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 15px;
+            width: 20%;
+        }
+
+</style>
+</head>
+<body>
+    <div class="box">
+    <h1>você pode enviar email para quem quiser </h1>
+    <form action="https://api.staticforms.xyz/submit"  method="POST">
+        <input type="hidden" name="accessKey" value="0ed11aeb-1543-4010-be90-54c4ff5db31e "> 
+        seu nome:<br/>
+        <input nome="nome" type="text"required/><br/>
+        seu E-mail:<br/>
+        <input nome="email" type="email"required/><br/>
+       escreva sua mansagem:<br/>
+        <textarea nome="mensagem"rows="5"></textarea><br/>
+        <input type="submit"class="bt1" value="Enviar"/>
+        <input type="reset"class="bt2" value="Limpar"/>
+        <input type="hidden" name="_subject" value="Novo Contato!">
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_captcha" value="false">
+    
+    </form>    
+</div>
+</body>
+</html>
