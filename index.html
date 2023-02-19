@@ -51,16 +51,16 @@ input{
   
   <form action="https://api.staticforms.xyz/submit" method="post">
     seu nome:<br/>
-    <input type="text" name="name" placeholder=><br/>
+    <input type="text" name="name"required placeholder=><br/>
     seu email:<br/>
-    <input type="text" name="email" placeholder=><br/>
+    <input type="text" name="email"required placeholder=><br/>
     escreva sua mensagem:<br/>
     <textarea name="message"></textarea>
     <input type="text" name="honeypot" style="display:none">
     <input type="hidden" name="accessKey" value="0ed11aeb-1543-4010-be90-54c4ff5db31e">
     <input type="hidden" name="subject" value="Contact us from - example.com" />
     <input type="hidden" name="replyTo" value="@">
-    <input type="hidden" name="redirectTo" value="https://adrianoalves87.github.io/segunda-site-aviso-de-E-mail-enviadok/">
+    <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
     <input type="submit" class="bt1" value="Enviar" />
     <input type="reset"class="bt2" value="Limpar"/>
   </form>
