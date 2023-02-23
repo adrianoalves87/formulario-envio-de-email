@@ -1,10 +1,10 @@
-body{
+ody{
   font-family: Arial, Helvetica, sans-serif;
   background-image: linear-gradient(to right, rgb(18, 1, 255), rgb(255, 136, 0));
 }
 .box{
   color: white;
-  position: absolute;
+  position: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
